@@ -1,5 +1,6 @@
 import React from "react";
 import Loader from "./components/Loader";
+import Nav from "./components/Landing/Nav";
 
 const App = () => {
   const [loader, setLoader] = React.useState(1);
@@ -15,7 +16,8 @@ const App = () => {
 
   return (
     <>
-      <Loader opacity={loader} />
+      {/* <Loader opacity={loader} /> */}
+      <Nav />
     </>
   );
 };

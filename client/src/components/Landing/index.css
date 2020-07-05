@@ -1,0 +1,53 @@
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+}
+
+.logo {
+    width: 5vw;
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    margin: 0;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    width: 90vw;
+    justify-content: space-evenly;
+}
+
+.links h1 {
+    margin: 0;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.links h1:hover {
+    transform: scale(1.1);
+    color: rgba(0, 0, 0, 0.6)
+}
+
+.social {
+    width: 5vw;
+}
+
+.social img {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.social img:hover {
+    transform: scale(1.1);
+}
