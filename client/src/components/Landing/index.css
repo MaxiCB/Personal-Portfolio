@@ -40,14 +40,54 @@
 }
 
 .social {
-    width: 5vw;
+    display: flex;
+    width: 10vw;
+    justify-content: space-evenly;
+    margin-right: 20px;
 }
 
-.social img {
+.social * {
     margin-left: 5px;
     cursor: pointer;
+    color: rgba(0, 0, 0, 0.4);
 }
 
-.social img:hover {
+.social *:hover {
     transform: scale(1.1);
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.mouse {
+    width: 30vw;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.mouse h3 {
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.mouse-icon {
+    width: 25px;
+    height: 40px;
+    border-style: solid;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.mouse-wheel {
+    width: 4px;
+    height: 10px;
+    margin-top: 4px;
+    background-color: black;
 }

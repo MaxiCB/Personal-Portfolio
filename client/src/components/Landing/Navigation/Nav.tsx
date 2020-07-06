@@ -1,6 +1,6 @@
 import React from "react";
 // Style
-import "./index.css";
+import "../index.css";
 // Components
 import Logo from "./Logo";
 import Links from "./Links";

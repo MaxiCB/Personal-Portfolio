@@ -1,6 +1,6 @@
 import React from "react";
-import Loader from "./components/Loader";
-import Nav from "./components/Landing/Nav";
+import Nav from "./components/Landing/Navigation/Nav";
+import Footer from "./components/Landing/Footer/Footer";
 
 const App = () => {
   const [loader, setLoader] = React.useState(1);
@@ -16,8 +16,8 @@ const App = () => {
 
   return (
     <>
-      {/* <Loader opacity={loader} /> */}
       <Nav />
+      <Footer />
     </>
   );
 };
