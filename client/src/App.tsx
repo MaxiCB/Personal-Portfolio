@@ -1,6 +1,7 @@
 import React from "react";
 import Nav from "./components/Landing/Navigation/Nav";
 import Footer from "./components/Landing/Footer/Footer";
+import Content from "./components/Landing/Content/Content";
 
 const App = () => {
   const [loader, setLoader] = React.useState(1);
@@ -15,10 +16,11 @@ const App = () => {
   }
 
   return (
-    <>
+    <div className="main">
       <Nav />
+      <Content />
       <Footer />
-    </>
+    </div>
   );
 };
 

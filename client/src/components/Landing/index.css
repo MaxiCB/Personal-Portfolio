@@ -1,3 +1,8 @@
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
 .nav-bar {
     display: flex;
     flex-direction: row;
@@ -24,11 +29,11 @@
     align-items: center;
     text-align: center;
     width: 90vw;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .links h1 {
-    margin: 0;
+    margin: 0 calc(90vh / 20);
     font-size: 18px;
     color: rgba(0, 0, 0, 0.4);
     cursor: pointer;
@@ -61,10 +66,11 @@
     position: absolute;
     left: 0;
     bottom: 0;
+    display: flex;
 }
 
 .mouse {
-    width: 30vw;
+    width: 40vw;
     justify-content: center;
     display: flex;
     align-items: center;
@@ -90,4 +96,32 @@
     height: 10px;
     margin-top: 4px;
     background-color: black;
+}
+
+.accolade {
+    background-color: black;
+    width: 60vw;
+    height: 15vh;
+    border-radius: 6px 0 0 0;
+}
+
+.main-content {
+    display: flex;
+}
+
+.main-content * {
+    margin: 10px;
+}
+
+.main-buttons {
+    width: 10%;
+}
+
+.main-information {
+    width: 30%;
+    text-align: center;
+}
+
+.main-illustrations {
+    text-align: center;
 }
