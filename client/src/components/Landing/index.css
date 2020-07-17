@@ -11,7 +11,8 @@
 
 .logo {
     width: 5vw;
-    font-size: 32px;
+    font-size: 28px;
+    font-weight: bold;
     line-height: 32px;
     text-align: center;
     margin: 0;
@@ -115,13 +116,50 @@
 
 .main-buttons {
     width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-button {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.circle-button:hover {
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .main-information {
     width: 30%;
-    text-align: center;
+    text-align: left;
+    font-size: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-information * {
+    margin: 0;
+}
+
+.main-information h3 {
+    font-size: 28px;
+}
+
+.main-information p {
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .main-illustrations {
-    text-align: center;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

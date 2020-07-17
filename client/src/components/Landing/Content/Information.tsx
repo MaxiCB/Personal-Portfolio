@@ -3,8 +3,8 @@ import React from "react";
 const Information = () => {
   return (
     <div className="main-information">
-      <h1>Aaron C. Beasley</h1>
-      <h2>Fullstack Web Developer</h2>
+      <h2>Aaron C. Beasley</h2>
+      <h3>Fullstack Web Developer</h3>
       <p>Web, Mobile, Backend Development</p>
     </div>
   );
