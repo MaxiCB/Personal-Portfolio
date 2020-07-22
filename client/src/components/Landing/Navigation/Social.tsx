@@ -6,12 +6,14 @@ import {
   faGithubSquare,
   faTwitterSquare,
 } from "@fortawesome/free-brands-svg-icons";
+import { Linkedin, GitHub, Twitter, Instagram } from "react-feather";
 const Social = () => {
   return (
     <div className="social">
-      <FontAwesomeIcon icon={faLinkedin} size="2x" />
-      <FontAwesomeIcon icon={faGithubSquare} size="2x" />
-      <FontAwesomeIcon icon={faTwitterSquare} size="2x" />
+      <Linkedin />
+      <Instagram />
+      <GitHub />
+      <Twitter />
     </div>
   );
 };

@@ -3,65 +3,6 @@
     flex-direction: column;
 }
 
-.nav-bar {
-    display: flex;
-    flex-direction: row;
-    padding-top: 20px;
-}
-
-.logo {
-    width: 5vw;
-    font-size: 28px;
-    font-weight: bold;
-    line-height: 32px;
-    text-align: center;
-    margin: 0;
-    margin-left: 20px;
-    cursor: pointer;
-}
-
-.logo:hover {
-    transform: scale(1.1);
-}
-
-.links {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-    width: 90vw;
-    justify-content: center;
-}
-
-.links h1 {
-    margin: 0 calc(90vh / 20);
-    font-size: 18px;
-    color: rgba(0, 0, 0, 0.4);
-    cursor: pointer;
-}
-
-.links h1:hover {
-    transform: scale(1.1);
-    color: rgba(0, 0, 0, 0.6)
-}
-
-.social {
-    display: flex;
-    width: 10vw;
-    justify-content: space-evenly;
-    margin-right: 20px;
-}
-
-.social * {
-    margin-left: 5px;
-    cursor: pointer;
-    color: rgba(0, 0, 0, 0.4);
-}
-
-.social *:hover {
-    transform: scale(1.1);
-    color: rgba(0, 0, 0, 0.6);
-}
 
 .footer {
     position: absolute;
@@ -99,7 +40,7 @@
     background-color: black;
     border-radius: 2px;
     animation-name: mouse_animation;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
@@ -114,11 +55,20 @@
     }
 }
 
-.accolade {
+.accolades {
     background-color: black;
     width: 60vw;
     height: 15vh;
     border-radius: 6px 0 0 0;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accolade {
+    margin: 10px;
 }
 
 .main-content {

@@ -8,8 +8,12 @@ import {
 const ScrollButtons = () => {
   return (
     <div className="main-buttons">
-      <FontAwesomeIcon icon={faChevronCircleUp} size="3x" />
-      <FontAwesomeIcon icon={faChevronCircleDown} size="3x" />
+      <FontAwesomeIcon
+        icon={faChevronCircleUp}
+        size="2x"
+        color="rgba(0, 0, 0, 0.4)"
+      />
+      <FontAwesomeIcon icon={faChevronCircleDown} size="2x" />
     </div>
   );
 };
