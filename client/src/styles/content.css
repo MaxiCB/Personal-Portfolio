@@ -1,0 +1,109 @@
+@media screen and (max-width: 425px) {
+    .main-content {
+        display: block !important;
+        margin: 0px !important;
+    }
+
+    .main-content * {
+        margin: 0px !important;
+    }
+
+    .main-information {
+        width: 100vw !important;
+        text-align: center !important;
+        margin: 0px !important;
+    }
+
+    .main-information h2 {
+        font-size: 34px !important;
+    }
+
+    .main-information h3 {
+        font-size: 24px !important;
+    }
+
+    .main-information p {
+        font-size: 18px !important;
+    }
+
+    .main-buttons {
+        display: none !important;
+    }
+
+    .main-illustrations {
+        margin: 0px !important;
+        padding-top: 10vh !important;
+    }
+
+    .person-image {
+        padding: 0 20px 0 0 !important;
+        width: 30% !important;
+    }
+
+    .phone-image {
+        width: 50% !important;
+    }
+
+    .secondary-images {
+        display: none !important;
+    }
+}
+
+.main-content {
+    display: flex;
+}
+
+.main-content * {
+    margin: 10px;
+}
+
+.main-buttons {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-button {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+}
+
+.circle-button:hover {
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.main-information {
+    width: 30%;
+    text-align: left;
+    font-size: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-information * {
+    margin: 0;
+}
+
+.main-information h3 {
+    font-size: 28px;
+}
+
+.main-information p {
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.main-illustrations {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

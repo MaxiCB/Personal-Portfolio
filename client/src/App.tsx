@@ -18,7 +18,7 @@ const App = () => {
   return (
     <div className="main">
       <Nav />
-      {/* <Content /> */}
+      <Content />
       <Footer />
     </div>
   );
