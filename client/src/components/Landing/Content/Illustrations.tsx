@@ -7,16 +7,8 @@ import Server from "../../../assets/server.svg";
 const Illustrations = () => {
   return (
     <div className="main-illustrations">
-      <img
-        className="person-image"
-        src={Person}
-        alt="person illustration"
-        style={{ paddingRight: "100px", paddingLeft: "100px" }}
-      />
-      <div
-        style={{ display: "flex", flexDirection: "column" }}
-        className="secondary-images"
-      >
+      <img className="person-image" src={Person} alt="person illustration" />
+      <div className="secondary-images">
         <img src={Webapp} alt="webapp illustration" className="app-image" />
         <img src={Server} alt="server illustration" className="server-image" />
       </div>

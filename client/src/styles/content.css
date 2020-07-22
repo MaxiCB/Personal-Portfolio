@@ -1,105 +1,92 @@
-@media screen and (max-width: 425px) {
+@media screen and (min-width: 1024px) {
     .main-content {
-        display: block !important;
-        margin: 0px !important;
+        display: flex !important;
     }
 
     .main-content * {
-        margin: 0px !important;
+        margin: 10px !important;
     }
 
     .main-information {
-        width: 100vw !important;
-        text-align: center !important;
-        margin: 0px !important;
-        margin-top: 5vh !important;
+        width: 30% !important;
+        text-align: left !important;
+        font-size: 32px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
     }
 
-    .main-information h2 {
-        font-size: 34px !important;
+    .main-information * {
+        margin: 0 !important;
     }
 
     .main-information h3 {
-        font-size: 24px !important;
+        font-size: 28px !important;
     }
 
     .main-information p {
-        font-size: 18px !important;
+        font-size: 24px !important;
+        color: rgba(0, 0, 0, 0.6) !important;
     }
 
     .main-buttons {
-        display: none !important;
+        width: 10% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
     }
 
-    .main-illustrations {
-        margin: 0px !important;
-        padding-top: 10vh !important;
+    .circle-button {
+        background-color: rgba(0, 0, 0, 0.4) !important;
+        width: 50px !important;
+        height: 50px !important;
+        border-radius: 50% !important;
+        cursor: pointer !important;
+        text-align: center !important;
     }
 
-    .person-image {
-        padding: 0 20px 0 0 !important;
-        width: 30% !important;
-    }
-
-    .phone-image {
-        width: 50% !important;
-    }
-
-    .secondary-images {
-        display: none !important;
+    .circle-button:hover {
+        transform: scale(1.1) !important;
+        background-color: rgba(0, 0, 0, 0.6) !important;
     }
 }
 
+@media screen and (max-width: 425px) {}
+
+@media screen and (max-width: 768px) {}
+
+/* Mobile First */
 .main-content {
-    display: flex;
+    display: block;
+    margin: 0px;
 }
 
 .main-content * {
-    margin: 10px;
-}
-
-.main-buttons {
-    width: 10%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.circle-button {
-    background-color: rgba(0, 0, 0, 0.4);
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    cursor: pointer;
-    text-align: center;
-}
-
-.circle-button:hover {
-    transform: scale(1.1);
-    background-color: rgba(0, 0, 0, 0.6);
-}
-
-.main-information {
-    width: 30%;
-    text-align: left;
-    font-size: 32px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.main-information * {
     margin: 0;
 }
 
+.main-information {
+    width: 100vw;
+    text-align: center;
+    margin: 0px;
+    margin-top: 5vh;
+}
+
+.main-information h2 {
+    font-size: 34px;
+}
+
 .main-information h3 {
-    font-size: 28px;
+    font-size: 24px;
 }
 
 .main-information p {
-    font-size: 24px;
-    color: rgba(0, 0, 0, 0.6);
+    font-size: 18px;
+}
+
+.main-buttons {
+    display: none;
 }
 
 .main-illustrations {
@@ -107,4 +94,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.person-image {
+    padding: 0 20px 0 0;
+    width: 30%;
+}
+
+.phone-image {
+    width: 50%;
+}
+
+.secondary-images {
+    display: none !important;
 }
