@@ -1,14 +1,15 @@
 import React from "react";
-
-const CircleButton = () => {
-  return <div className="circle-button"></div>;
-};
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faChevronCircleDown,
+  faChevronCircleUp,
+} from "@fortawesome/free-solid-svg-icons";
 
 const ScrollButtons = () => {
   return (
     <div className="main-buttons">
-      <CircleButton />
-      <CircleButton />
+      <FontAwesomeIcon icon={faChevronCircleUp} size="3x" />
+      <FontAwesomeIcon icon={faChevronCircleDown} size="3x" />
     </div>
   );
 };
