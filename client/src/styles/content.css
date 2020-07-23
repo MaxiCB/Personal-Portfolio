@@ -16,6 +16,14 @@
         justify-content: center !important;
     }
 
+    .main-illustrations {
+        width: 70% !important;
+    }
+
+    .main-illustrations * {
+        height: 70vh;
+    }
+
     .main-information * {
         margin: 0 !important;
     }
@@ -27,6 +35,10 @@
     .main-information p {
         font-size: 24px !important;
         color: rgba(0, 0, 0, 0.6) !important;
+    }
+
+    .tablet-nav .links {
+        display: none !important;
     }
 
     .main-buttons {
@@ -52,9 +64,31 @@
     }
 }
 
-@media screen and (max-width: 425px) {}
+@media screen and (max-width: 425px) {
+    .main-illustrations {
+        margin-top: 10vh !important;
+    }
+}
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 1024px) {
+    .tablet-nav {
+        display: flex;
+    }
+
+    .tablet-nav .main-content {
+        width: 70vw;
+    }
+
+    .tablet-nav .links {
+        flex-direction: column;
+        width: 30vw;
+        align-items: flex-start;
+    }
+
+    .secondary-images {
+        display: none !important;
+    }
+}
 
 /* Mobile First */
 .main-content {
@@ -67,10 +101,10 @@
 }
 
 .main-information {
-    width: 100vw;
+    width: 100%;
     text-align: center;
     margin: 0px;
-    margin-top: 5vh;
+    margin-top: 3vh;
 }
 
 .main-information h2 {
@@ -90,7 +124,7 @@
 }
 
 .main-illustrations {
-    margin-top: 80px;
+    margin-top: 8vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,13 +132,17 @@
 
 .person-image {
     padding: 0 20px 0 0;
-    width: 30%;
+    width: 20%;
 }
 
 .phone-image {
-    width: 50%;
+    width: 40%;
 }
 
 .secondary-images {
     display: none !important;
+}
+
+.tablet-nav .main-content {
+    width: 100vw;
 }

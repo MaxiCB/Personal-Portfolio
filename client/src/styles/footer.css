@@ -1,4 +1,4 @@
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
     .mouse {
         display: none !important;
     }
@@ -8,6 +8,9 @@
     }
 
     .mobile-footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
         display: flex !important;
         background-color: black !important;
         color: white !important;
@@ -32,6 +35,24 @@
     }
 }
 
+@media screen and (max-width: 767px) {}
+
+@media screen and (max-width: 1024px) {
+    .mouse {
+        width: 30vw !important;
+    }
+
+    .mouse h3 {
+        margin-left: 10px !important;
+        font-weight: 500;
+        font-size: 18px !important;
+    }
+
+    .accolades {
+        width: 70vw !important;
+    }
+}
+
 .mobile-footer {
     display: none;
 }
@@ -40,6 +61,7 @@
     position: absolute;
     left: 0;
     bottom: 0;
+    height: 15vh;
     display: flex;
 }
 
@@ -90,15 +112,9 @@
 .accolades {
     background-color: black;
     width: 60vw;
-    height: 15vh;
     border-radius: 6px 0 0 0;
     color: white;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.accolade {
-    margin: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
