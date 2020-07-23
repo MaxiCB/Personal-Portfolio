@@ -1,0 +1,148 @@
+@media screen and (min-width: 1024px) {
+    .main-content {
+        display: flex !important;
+    }
+
+    .main-content * {
+        margin: 10px !important;
+    }
+
+    .main-information {
+        width: 30% !important;
+        text-align: left !important;
+        font-size: 32px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+    }
+
+    .main-illustrations {
+        width: 70% !important;
+    }
+
+    .main-illustrations * {
+        height: 70vh;
+    }
+
+    .main-information * {
+        margin: 0 !important;
+    }
+
+    .main-information h3 {
+        font-size: 28px !important;
+    }
+
+    .main-information p {
+        font-size: 24px !important;
+        color: rgba(0, 0, 0, 0.6) !important;
+    }
+
+    .tablet-nav .links {
+        display: none !important;
+    }
+
+    .main-buttons {
+        width: 10% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .circle-button {
+        background-color: rgba(0, 0, 0, 0.4) !important;
+        width: 50px !important;
+        height: 50px !important;
+        border-radius: 50% !important;
+        cursor: pointer !important;
+        text-align: center !important;
+    }
+
+    .circle-button:hover {
+        transform: scale(1.1) !important;
+        background-color: rgba(0, 0, 0, 0.6) !important;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .main-illustrations {
+        margin-top: 10vh !important;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .tablet-nav {
+        display: flex;
+    }
+
+    .tablet-nav .main-content {
+        width: 70vw;
+    }
+
+    .tablet-nav .links {
+        flex-direction: column;
+        width: 30vw;
+        align-items: flex-start;
+    }
+
+    .secondary-images {
+        display: none !important;
+    }
+}
+
+/* Mobile First */
+.main-content {
+    display: block;
+    margin: 0px;
+}
+
+.main-content * {
+    margin: 0;
+}
+
+.main-information {
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+    margin-top: 3vh;
+}
+
+.main-information h2 {
+    font-size: 34px;
+}
+
+.main-information h3 {
+    font-size: 24px;
+}
+
+.main-information p {
+    font-size: 18px;
+}
+
+.main-buttons {
+    display: none;
+}
+
+.main-illustrations {
+    margin-top: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.person-image {
+    padding: 0 20px 0 0;
+    width: 20%;
+}
+
+.phone-image {
+    width: 40%;
+}
+
+.secondary-images {
+    display: none !important;
+}
+
+.tablet-nav .main-content {
+    width: 100vw;
+}
