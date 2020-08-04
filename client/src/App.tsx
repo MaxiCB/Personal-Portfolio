@@ -1,19 +1,14 @@
 import React from "react";
-import Nav from "./components/Landing/Navigation/Nav";
-import Footer from "./components/Landing/Footer/Footer";
-import Content from "./components/Landing/Content/Content";
-import Links from "./components/Landing/Navigation/Links";
+// Ant Design
+import { Layout } from "antd";
+// Style
+import NavigationBar from "./components/Landing/Navigation/NavigationBar";
 
 const App = () => {
   return (
-    <div className="main">
-      <Nav />
-      <div className="tablet-nav">
-        <Links />
-        <Content />
-      </div>
-      <Footer />
-    </div>
+    <Layout>
+      <NavigationBar />
+    </Layout>
   );
 };
 
