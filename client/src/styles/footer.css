@@ -118,3 +118,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+.accolade {
+    margin: 8px;
+}
