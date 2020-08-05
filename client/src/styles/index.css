@@ -9,6 +9,11 @@ body {
   height: 100vh;
 }
 
+.app {
+  width: 100vw;
+  height: 100vh;
+}
+
 .nav-logo {
   width: 120px;
   height: 31px;
@@ -39,10 +44,23 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #fff;
 }
 
 .mobile-icons * {
   padding: 2px;
-  color: black;
+  margin-top: 4px;
+}
+
+.mobile-illustrations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px 0 20px
+}
+
+.custom-menu {
+  width: 20%;
+  position: absolute;
+  left: 24px;
+  background: #f0f2f5;
 }

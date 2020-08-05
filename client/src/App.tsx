@@ -2,12 +2,14 @@ import React from "react";
 // Ant Design
 import { Layout } from "antd";
 // Style
-import NavigationBar from "./components/Landing/Navigation/NavigationBar";
+import NavigationBar from "./components/Navigation/NavigationBar";
+import MainContent from "./components/Content/MainContent";
 
 const App = () => {
   return (
-    <Layout>
+    <Layout className="app">
       <NavigationBar />
+      <MainContent />
     </Layout>
   );
 };

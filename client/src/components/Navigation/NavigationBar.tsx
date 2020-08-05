@@ -1,6 +1,6 @@
 import React from "react";
 // Ant Design
-import { Layout, Menu, Popover } from "antd";
+import { Layout, Menu, Popover, Drawer } from "antd";
 import {
   InstagramOutlined,
   LinkedinOutlined,
@@ -13,27 +13,64 @@ import useBreakpointHook from "antd/lib/grid/hooks/useBreakpoint";
 
 const NavigationBar = () => {
   const { Header } = Layout;
-  const test = useBreakpointHook();
-  console.log(test);
+
+  const [menuOpen, setMenuOpen] = React.useState<boolean>(false);
+
+  const handleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  const size = useBreakpointHook();
+  console.log(size);
 
   return (
     <>
-      {test.xs ? (
+      {size.xs ? (
         <>
-          <Header style={{ backgroundColor: "#fff" }}>
+          <Header
+            style={{
+              backgroundColor: "#fff",
+            }}
+          >
             <div className="mobile-menu">
-              <MenuIcon style={{ float: "left" }} size={32} />
+              <MenuIcon
+                style={{ float: "left" }}
+                size={32}
+                onClick={handleMenu}
+              />
             </div>
             <div className="nav-logo">AaronCB</div>{" "}
           </Header>
           <div className="mobile-icons">
-            <LinkedinOutlined style={{ fontSize: "28px" }} />
-            <InstagramOutlined style={{ fontSize: "28px" }} />
-            <GithubOutlined style={{ fontSize: "28px" }} />
-            <TwitterOutlined style={{ fontSize: "28px" }} />
+            <LinkedinOutlined style={{ fontSize: "24px" }} />
+            <InstagramOutlined style={{ fontSize: "24px" }} />
+            <GithubOutlined style={{ fontSize: "24px" }} />
+            <TwitterOutlined style={{ fontSize: "24px" }} />
           </div>
+          <Drawer
+            title="Pages"
+            placement={"left"}
+            closable={true}
+            onClose={handleMenu}
+            visible={menuOpen}
+            key={"left"}
+            bodyStyle={{ padding: 0 }}
+          >
+            <Menu
+              defaultSelectedKeys={["1"]}
+              defaultOpenKeys={["sub1"]}
+              mode="inline"
+              style={{ width: "100%" }}
+            >
+              <Menu.Item key="1">Home</Menu.Item>
+              <Menu.Item key="2">Portfolio</Menu.Item>
+              <Menu.Item key="3">Blog's</Menu.Item>
+              <Menu.Item key="4">About</Menu.Item>
+              <Menu.Item key="5">Contact</Menu.Item>
+            </Menu>
+          </Drawer>
         </>
-      ) : test.md && !test.lg ? (
+      ) : size.sm && size.md && !size.lg ? (
         <Header style={{ backgroundColor: "#fff" }}>
           <div className="nav-logo" style={{ left: 0 }}>
             AaronCB
@@ -59,7 +96,7 @@ const NavigationBar = () => {
                 }
                 trigger="click"
               >
-                <LinkedinOutlined style={{ fontSize: "28px" }} />
+                <LinkedinOutlined style={{ fontSize: "24px" }} />
               </Popover>
             </Menu.Item>
             <Menu.Item key="2">
@@ -77,7 +114,7 @@ const NavigationBar = () => {
                 }
                 trigger="click"
               >
-                <InstagramOutlined style={{ fontSize: "28px" }} />
+                <InstagramOutlined style={{ fontSize: "24px" }} />
               </Popover>
             </Menu.Item>
             <Menu.Item key="3">
@@ -95,7 +132,7 @@ const NavigationBar = () => {
                 }
                 trigger="click"
               >
-                <GithubOutlined style={{ fontSize: "28px" }} />
+                <GithubOutlined style={{ fontSize: "24px" }} />
               </Popover>
             </Menu.Item>
             <Menu.Item key="4">
@@ -113,7 +150,7 @@ const NavigationBar = () => {
                 }
                 trigger="click"
               >
-                <TwitterOutlined style={{ fontSize: "28px" }} />
+                <TwitterOutlined style={{ fontSize: "24px" }} />
               </Popover>
             </Menu.Item>
           </Menu>
