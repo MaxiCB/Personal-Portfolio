@@ -57,7 +57,7 @@ const NavigationBar = () => {
             bodyStyle={{ padding: 0 }}
           >
             <Menu
-              defaultSelectedKeys={["1"]}
+              defaultSelectedKeys={["0"]}
               defaultOpenKeys={["sub1"]}
               mode="inline"
               style={{ width: "100%" }}
@@ -78,7 +78,7 @@ const NavigationBar = () => {
           <Menu
             theme="light"
             mode="horizontal"
-            defaultSelectedKeys={["1"]}
+            defaultSelectedKeys={["0"]}
             style={{ position: "absolute", right: 0 }}
           >
             <Menu.Item key="1">
