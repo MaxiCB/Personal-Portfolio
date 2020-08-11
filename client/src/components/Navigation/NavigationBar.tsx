@@ -21,7 +21,7 @@ const NavigationBar = () => {
   };
 
   const size = useBreakpointHook();
-  console.log(size);
+  // console.log(size);
 
   return (
     <>
